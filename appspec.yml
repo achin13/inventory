@@ -7,12 +7,12 @@ files:
 
 hooks:
   
-  DownloadBundle:
-    - location: ./codedeploy/downloadBundle.sh
-      timeout: 30
-      runas: ubuntu
   BeforeInstall:
     - location: ./codedeploy/beforeInstall.sh
+      timeout: 30
+      runas: ubuntu
+  DownloadBundle:
+    - location: ./codedeploy/downloadBundle.sh
       timeout: 30
       runas: ubuntu
   Install:

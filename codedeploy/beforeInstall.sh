@@ -1,22 +1,17 @@
 #echo "***************************************************"
-#echo "BEFORE INSTALL BEGINS"
+echo "BEFORE INSTALL BEGINS"
 #echo "***************************************************"
 #
 #
+## remove everything
+ sudo rm -r * /var/www/html/
 #
+## 
 #
-#
-#
-#
-#
-### kill tomcat process (redundant command, just to be safe)
-##sudo pkill -9 -f tomcat
-#
-#
-### make next file executable
-###sudo chmod 777 /home/ubuntu/codedeploy/install.sh
+## make next file executable
+sudo chmod 777 /home/ubuntu/codedeploy/install.sh
 ##
 ##
 #echo "***************************************************"
-#echo "BEFORE INSTALL ENDS"
+echo "BEFORE INSTALL ENDS"
 #echo "***************************************************"

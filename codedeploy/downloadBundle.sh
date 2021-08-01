@@ -6,7 +6,8 @@
 #
 
 cd /var/www/html
-rm -r *
+sudo rm -rf applicationStop
+sudo rm -rf applicationStart
 
 
 
