@@ -5,25 +5,3 @@ files:
   - source: /
     destination: /var/www/html
 
-hooks:
-  
-  BeforeInstall:
-    - location: ./codedeploy/beforeInstall.sh
-      timeout: 30
-      runas: ubuntu
-  DownloadBundle:
-    - location: ./codedeploy/downloadBundle.sh
-      timeout: 30
-      runas: ubuntu
-  Install:
-    - location: ./codedeploy/install.sh
-      timeout: 110
-      runas: ubuntu
-  AfterInstall:
-    - location: ./codedeploy/afterInstall.sh
-      timeout: 10
-      runas: ubuntu
-  ApplicationStart:
-    - location: ./codedeploy/applicationStart.sh
-      timeout: 10
-      runas: ubuntu
